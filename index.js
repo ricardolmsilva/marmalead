@@ -20,5 +20,7 @@ function addListOfKeyworks() {
   table.insertAdjacentHTML("afterend", keywords.join(", "));
 }
 
-addListOfKeyworks();
-showSuggestionDescriptions();
+document.addEventListener("DOMContentLoaded", function () {
+  addListOfKeyworks();
+  showSuggestionDescriptions();
+});
